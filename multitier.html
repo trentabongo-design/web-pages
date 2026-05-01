@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multitier Architecture – Internet Terminology</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Internet Terminology</h1>
+    <p class="subtitle">A Complete Guide to Core Internet &amp; Web Concepts</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="www.html">WWW</a></li>
+      <li><a href="tcp-ip.html">TCP/IP</a></li>
+      <li><a href="browser.html">Web Browsers</a></li>
+      <li><a href="web-server.html">Web Servers</a></li>
+      <li><a href="url.html">URLs</a></li>
+      <li><a href="dns.html">DNS</a></li>
+      <li><a href="http.html">HTTP</a></li>
+      <li><a href="intranet.html">Intranet</a></li>
+      <li><a href="extranet.html">Extranet</a></li>
+      <li><a href="multitier.html" class="active">Multitier</a></li>
+      <li><a href="ftp.html">FTP</a></li>
+      <li><a href="html.html">HTML</a></li>
+      <li><a href="web1.html">Web 1.0</a></li>
+      <li><a href="web2.html">Web 2.0</a></li>
+      <li><a href="web3.html">Web 3.0</a></li>
+      <li><a href="web4.html">Web 4.0</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <h1 class="page-title">Multitier Architecture</h1>
+    <span class="term-label">System Design — Term 10</span>
+
+    <div class="content-section">
+      <h2>What Is Multitier Architecture?</h2>
+      <p>
+        Multitier architecture, also known as n-tier architecture, is a design approach for building software applications where different components of the system are separated into distinct layers — or "tiers" — each with its own specific role. Rather than building everything as one big block of code, the application is divided into logical parts that can each be developed, maintained, and scaled independently.
+      </p>
+      <p>
+        The most common version of this is the three-tier architecture, which separates an application into a presentation layer (what the user sees), a logic layer (the rules and processing), and a data layer (the database).
+      </p>
+    </div>
+
+    <div class="image-block">
+      <figure>
+        <img src="images/multitier.jpg" alt="Diagram of a three-tier architecture showing Presentation, Application Logic, and Database tiers" />
+        <figcaption>Three-tier architecture cleanly separates what users see, how the app processes data, and where data is stored.</figcaption>
+      </figure>
+    </div>
+
+    <div class="content-section">
+      <h2>The Three Main Tiers Explained</h2>
+      <p>
+        The <strong>Presentation Tier</strong> (also called the front end) is what the user directly interacts with — the web pages, buttons, forms, and visual elements. This is the part built with HTML, CSS, and JavaScript that runs in the browser.
+      </p>
+      <p>
+        The <strong>Logic Tier</strong> (also called the application tier or back end) is the middle layer. It processes user input, applies business rules, performs calculations, and makes decisions about what data to retrieve or store. This is where server-side languages like Python, PHP, or Java typically run.
+      </p>
+      <p>
+        The <strong>Data Tier</strong> is the database layer. It stores all the application's data and responds to queries from the logic tier. Common database systems include MySQL, PostgreSQL, and MongoDB.
+      </p>
+    </div>
+
+    <div class="content-section">
+      <h2>Why Use Multitier Architecture?</h2>
+      <p>
+        Separating an application into tiers brings many advantages. Each tier can be updated or replaced without affecting the others. Different teams can work on different tiers simultaneously. If one part of the system needs more resources (like the database getting too many requests), it can be scaled up independently without rebuilding the whole application.
+      </p>
+    </div>
+
+    <div class="key-facts">
+      <h2>Key Facts About Multitier Architecture</h2>
+      <ul>
+        <li>Multitier architecture separates applications into distinct functional layers.</li>
+        <li>Three-tier architecture is the most widely used — Presentation, Logic, and Data tiers.</li>
+        <li>Each tier can be developed, deployed, and scaled independently.</li>
+        <li>This design improves maintainability, security, and flexibility of applications.</li>
+        <li>Web applications almost universally use some form of multitier architecture.</li>
+        <li>N-tier refers to architectures with more than three layers when greater complexity is needed.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Internet Terminology Reference &mdash; Topic 1 &mdash; All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
