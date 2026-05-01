@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=Raleway:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lora', Georgia, serif;
+  background-color: #f4f1eb;
+  color: #2c2c2c;
+  line-height: 1.8;
+}
+
+/* ── Header ── */
+header {
+  background-color: #1b2a4a;
+  color: #fff;
+  padding: 30px 40px 20px;
+  text-align: center;
+  border-bottom: 4px solid #e8a838;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+header p.subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.85rem;
+  color: #a8bbd4;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* ── Navigation ── */
+nav {
+  background-color: #243557;
+  padding: 0;
+  border-bottom: 3px solid #e8a838;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  color: #c8d8eb;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 12px 14px;
+  letter-spacing: 0.5px;
+  transition: background 0.2s, color 0.2s;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #e8a838;
+  color: #1b2a4a;
+}
+
+/* ── Page container ── */
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 24px 60px;
+}
+
+/* ── Page title ── */
+.page-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  color: #1b2a4a;
+  margin-bottom: 8px;
+  border-bottom: 3px solid #e8a838;
+  padding-bottom: 10px;
+}
+
+.term-label {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.8rem;
+  color: #7a8fa6;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+/* ── Content sections ── */
+.content-section {
+  background: #fff;
+  border-radius: 6px;
+  padding: 32px 36px;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  border-left: 4px solid #1b2a4a;
+}
+
+.content-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  color: #1b2a4a;
+  margin-bottom: 14px;
+}
+
+.content-section p {
+  margin-bottom: 14px;
+  color: #3c3c3c;
+}
+
+.content-section p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Image block ── */
+.image-block {
+  text-align: center;
+  background: #fff;
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.image-block img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.image-block figcaption {
+  margin-top: 12px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.82rem;
+  color: #888;
+  font-style: italic;
+}
+
+/* ── Key facts box ── */
+.key-facts {
+  background: #1b2a4a;
+  color: #e8f0fa;
+  border-radius: 6px;
+  padding: 26px 32px;
+  margin-bottom: 28px;
+}
+
+.key-facts h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #e8a838;
+  margin-bottom: 14px;
+}
+
+.key-facts ul {
+  padding-left: 20px;
+}
+
+.key-facts ul li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ── Index card grid ── */
+.term-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.term-card {
+  background: #fff;
+  border-radius: 6px;
+  padding: 22px 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  text-decoration: none;
+  color: #1b2a4a;
+  border-top: 4px solid #e8a838;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: block;
+}
+
+.term-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.13);
+}
+
+.term-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.term-card p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.78rem;
+  color: #7a8fa6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ── Footer ── */
+footer {
+  background-color: #1b2a4a;
+  color: #a8bbd4;
+  text-align: center;
+  padding: 22px 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.5px;
+  border-top: 3px solid #e8a838;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.4rem; }
+  .page-title { font-size: 1.7rem; }
+  .content-section { padding: 20px 18px; }
+  nav ul li a { font-size: 0.7rem; padding: 10px 8px; }
+}
