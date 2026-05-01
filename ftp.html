@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FTP – Internet Terminology</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Internet Terminology</h1>
+    <p class="subtitle">A Complete Guide to Core Internet &amp; Web Concepts</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="www.html">WWW</a></li>
+      <li><a href="tcp-ip.html">TCP/IP</a></li>
+      <li><a href="browser.html">Web Browsers</a></li>
+      <li><a href="web-server.html">Web Servers</a></li>
+      <li><a href="url.html">URLs</a></li>
+      <li><a href="dns.html">DNS</a></li>
+      <li><a href="http.html">HTTP</a></li>
+      <li><a href="intranet.html">Intranet</a></li>
+      <li><a href="extranet.html">Extranet</a></li>
+      <li><a href="multitier.html">Multitier</a></li>
+      <li><a href="ftp.html" class="active">FTP</a></li>
+      <li><a href="html.html">HTML</a></li>
+      <li><a href="web1.html">Web 1.0</a></li>
+      <li><a href="web2.html">Web 2.0</a></li>
+      <li><a href="web3.html">Web 3.0</a></li>
+      <li><a href="web4.html">Web 4.0</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <h1 class="page-title">File Transfer Protocol (FTP)</h1>
+    <span class="term-label">File Transfer — Term 11</span>
+
+    <div class="content-section">
+      <h2>What Is FTP?</h2>
+      <p>
+        FTP stands for File Transfer Protocol. It is a standard network protocol used to transfer files from one computer to another over a TCP/IP network, such as the internet. It was one of the earliest internet protocols and was designed specifically to make file sharing between computers straightforward and reliable.
+      </p>
+      <p>
+        In simple terms, FTP allows you to upload files to a server or download files from a server. Web developers commonly used FTP to upload their website files to a web host. Even today, FTP (and its more secure successors) remains widely used in professional environments for large-scale file transfers.
+      </p>
+    </div>
+
+    <div class="image-block">
+      <figure>
+        <img src="images/ftp.jpg" alt="Diagram showing FTP file transfer between a client computer and an FTP server using upload and download operations" />
+        <figcaption>FTP allows files to be uploaded to or downloaded from a remote server using a client-server model.</figcaption>
+      </figure>
+    </div>
+
+    <div class="content-section">
+      <h2>How FTP Works</h2>
+      <p>
+        FTP uses a client-server model. The FTP client is the software on your computer that initiates the connection — programs like FileZilla are popular FTP clients. The FTP server is the remote computer that holds the files. When you connect, you authenticate with a username and password, and then you can browse the server's file system, upload files to it, or download files from it.
+      </p>
+      <p>
+        FTP uses two separate channels: a <strong>command channel</strong> (port 21) that handles instructions and responses, and a <strong>data channel</strong> (port 20) that handles the actual file transfer. This two-channel approach was innovative at the time it was designed.
+      </p>
+    </div>
+
+    <div class="content-section">
+      <h2>FTP and Security</h2>
+      <p>
+        A significant drawback of standard FTP is that it transmits data — including usernames and passwords — in plain text, meaning anyone monitoring the network could intercept the information. For this reason, more secure alternatives have largely replaced it. <strong>SFTP</strong> (SSH File Transfer Protocol) and <strong>FTPS</strong> (FTP Secure) both encrypt the connection, making them far safer for transferring sensitive data.
+      </p>
+    </div>
+
+    <div class="key-facts">
+      <h2>Key Facts About FTP</h2>
+      <ul>
+        <li>FTP stands for File Transfer Protocol.</li>
+        <li>It is used to transfer files between computers over a network.</li>
+        <li>FTP uses port 21 for commands and port 20 for data transfer.</li>
+        <li>It was one of the first internet protocols, developed in the early 1970s.</li>
+        <li>Standard FTP is not encrypted and is considered insecure for sensitive transfers.</li>
+        <li>SFTP and FTPS are secure alternatives that encrypt the connection.</li>
+        <li>FileZilla is a popular free FTP client used by web developers worldwide.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Internet Terminology Reference &mdash; Topic 1 &mdash; All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
