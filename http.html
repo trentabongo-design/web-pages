@@ -1,100 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HTTP – Internet Terminology</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>HTTP</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <h1>Internet Terminology</h1>
-    <p class="subtitle">A Complete Guide to Core Internet &amp; Web Concepts</p>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="www.html">WWW</a></li>
-      <li><a href="tcp-ip.html">TCP/IP</a></li>
-      <li><a href="browser.html">Web Browsers</a></li>
-      <li><a href="web-server.html">Web Servers</a></li>
-      <li><a href="url.html">URLs</a></li>
-      <li><a href="dns.html">DNS</a></li>
-      <li><a href="http.html" class="active">HTTP</a></li>
-      <li><a href="intranet.html">Intranet</a></li>
-      <li><a href="extranet.html">Extranet</a></li>
-      <li><a href="multitier.html">Multitier</a></li>
-      <li><a href="ftp.html">FTP</a></li>
-      <li><a href="html.html">HTML</a></li>
-      <li><a href="web1.html">Web 1.0</a></li>
-      <li><a href="web2.html">Web 2.0</a></li>
-      <li><a href="web3.html">Web 3.0</a></li>
-      <li><a href="web4.html">Web 4.0</a></li>
-    </ul>
-  </nav>
-
-  <div class="container">
-
-    <h1 class="page-title">Hypertext Transfer Protocol (HTTP)</h1>
-    <span class="term-label">Protocols — Term 7</span>
-
-    <div class="content-section">
-      <h2>What Is HTTP?</h2>
-      <p>
-        HTTP stands for Hypertext Transfer Protocol. It is the set of rules that governs how data is exchanged between a web browser and a web server. Every time you visit a website, HTTP is working in the background to transfer the page's files from the server to your browser so they can be displayed.
-      </p>
-      <p>
-        HTTP is what makes the World Wide Web function at a practical level. It defines the format of messages sent between clients (browsers) and servers, as well as what actions can be taken — like requesting a page, submitting a form, or uploading a file.
-      </p>
-    </div>
-
-    <div class="image-block">
-      <figure>
-        <img src="images/http.jpg" alt="Diagram showing HTTP request and response cycle between a browser client and a web server" />
-        <figcaption>HTTP defines a clear request-response cycle: the browser sends a request, and the server sends back a response.</figcaption>
-      </figure>
-    </div>
-
-    <div class="content-section">
-      <h2>HTTP Request and Response</h2>
-      <p>
-        The HTTP communication model is simple: a client sends a <strong>request</strong> and a server sends back a <strong>response</strong>. A request includes a method (like GET to retrieve data, or POST to send data), the URL of the resource, and optional headers with additional information.
-      </p>
-      <p>
-        The response includes a status code that tells the browser what happened. For example, <strong>200 OK</strong> means the request was successful, <strong>404 Not Found</strong> means the page doesn't exist, and <strong>500 Internal Server Error</strong> means something went wrong on the server's end.
-      </p>
-    </div>
-
-    <div class="content-section">
-      <h2>HTTP vs HTTPS</h2>
-      <p>
-        HTTPS is the secure version of HTTP. The "S" stands for Secure, and it means that all communication between the browser and server is encrypted using SSL/TLS technology. This prevents anyone from intercepting and reading the data being transmitted.
-      </p>
-      <p>
-        Today, most websites use HTTPS. Browsers like Chrome will flag HTTP-only sites as "Not Secure." If you're entering passwords, personal details, or payment information on any website, you should always ensure the URL starts with <em>https://</em>.
-      </p>
-    </div>
-
-    <div class="key-facts">
-      <h2>Key Facts About HTTP</h2>
-      <ul>
-        <li>HTTP stands for Hypertext Transfer Protocol.</li>
-        <li>It defines how browsers and web servers communicate.</li>
-        <li>HTTP uses a request-response model — the browser asks, the server answers.</li>
-        <li>Common HTTP methods include GET, POST, PUT, DELETE, and PATCH.</li>
-        <li>HTTP status codes like 200, 404, and 500 communicate the result of requests.</li>
-        <li>HTTPS is the encrypted, secure version of HTTP, widely used today.</li>
-        <li>HTTP/2 and HTTP/3 are newer versions that offer significantly faster performance.</li>
-      </ul>
-    </div>
-
-  </div>
-
-  <footer>
-    <p>Internet Terminology Reference &mdash; Topic 1 &mdash; All Rights Reserved</p>
-  </footer>
-
+<nav>
+    <a href="index.html">Home</a> <a href="www.html">WWW</a> <a href="tcp-ip.html">TCP/IP</a> <a href="browser.html">Web Browsers</a> <a href="web-server.html">Web Servers</a> <a href="url.html">URL</a> <a href="dns.html">DNS</a> <a href="http.html">HTTP</a> <a href="intranet.html">Intranet</a> <a href="extranet.html">Extranet</a> <a href="multitier.html">Multitier</a> <a href="ftp.html">FTP</a> <a href="html.html">HTML</a> <a href="web1.html">Web 1.0</a> <a href="web2.html">Web 2.0</a> <a href="web3.html">Web 3.0</a> <a href="web4.html">Web 4.0</a>
+</nav>
+<h1>HTTP - Hypertext Transfer Protocol</h1>
+<hr>
+<img src="images/http.jpg" alt="HTTP diagram">
+<h2>What is HTTP?</h2>
+<p>HTTP (Hypertext Transfer Protocol) is the set of rules that controls how web pages are transferred between a browser and a web server. Every time you visit a website, HTTP is what makes that communication happen. HTTPS is the secure version of HTTP, where all data is encrypted.</p>
+<h2>Structure</h2>
+<ul>
+    <li><strong>Request</strong> — the browser asks the server for a page</li>
+    <li><strong>Response</strong> — the server sends the page back</li>
+    <li><strong>HTTP</strong> — unsecured connection</li>
+    <li><strong>HTTPS</strong> — secured and encrypted connection</li>
+</ul>
 </body>
 </html>
