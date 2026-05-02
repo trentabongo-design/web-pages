@@ -1,96 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DNS – Internet Terminology</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>DNS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <h1>Internet Terminology</h1>
-    <p class="subtitle">A Complete Guide to Core Internet &amp; Web Concepts</p>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="www.html">WWW</a></li>
-      <li><a href="tcp-ip.html">TCP/IP</a></li>
-      <li><a href="browser.html">Web Browsers</a></li>
-      <li><a href="web-server.html">Web Servers</a></li>
-      <li><a href="url.html">URLs</a></li>
-      <li><a href="dns.html" class="active">DNS</a></li>
-      <li><a href="http.html">HTTP</a></li>
-      <li><a href="intranet.html">Intranet</a></li>
-      <li><a href="extranet.html">Extranet</a></li>
-      <li><a href="multitier.html">Multitier</a></li>
-      <li><a href="ftp.html">FTP</a></li>
-      <li><a href="html.html">HTML</a></li>
-      <li><a href="web1.html">Web 1.0</a></li>
-      <li><a href="web2.html">Web 2.0</a></li>
-      <li><a href="web3.html">Web 3.0</a></li>
-      <li><a href="web4.html">Web 4.0</a></li>
-    </ul>
-  </nav>
-
-  <div class="container">
-
-    <h1 class="page-title">Domain Name System (DNS)</h1>
-    <span class="term-label">Domain Naming — Term 6</span>
-
-    <div class="content-section">
-      <h2>What Is DNS?</h2>
-      <p>
-        DNS stands for Domain Name System. It is essentially the phonebook of the internet. Rather than remembering the numerical IP address of every website you want to visit, DNS allows you to type in a human-friendly name — like <em>www.google.com</em> — and automatically translates it into the corresponding IP address that computers use to find each other.
-      </p>
-      <p>
-        Without DNS, browsing the internet would require you to memorise strings of numbers like <em>142.250.74.46</em> for every site you visit. DNS makes the web far more usable by handling all of that translation invisibly in the background.
-      </p>
-    </div>
-
-    <div class="image-block">
-      <figure>
-        <img src="images/dns.jpg" alt="Step-by-step diagram showing how DNS resolves a domain name to an IP address" />
-        <figcaption>When you type a domain name, DNS servers work together to find and return the correct IP address for that website.</figcaption>
-      </figure>
-    </div>
-
-    <div class="content-section">
-      <h2>How DNS Works</h2>
-      <p>
-        When you type a domain name into your browser, your computer first checks its own local cache to see if it already knows the IP address from a recent visit. If not, it sends a query to a DNS resolver — usually provided by your internet service provider or a public service like Google's 8.8.8.8.
-      </p>
-      <p>
-        The resolver then works through a hierarchy of DNS servers to find the answer. It starts by asking a root name server, which directs it to a Top-Level Domain (TLD) server (for .com, .org, etc.), which in turn points to the authoritative name server for that specific domain. That server finally returns the correct IP address, and your browser uses it to connect to the website.
-      </p>
-    </div>
-
-    <div class="content-section">
-      <h2>Types of DNS Records</h2>
-      <p>
-        DNS doesn't just store IP addresses. It stores different types of records for different purposes. The most common is the <strong>A record</strong>, which maps a domain to an IPv4 address. <strong>AAAA records</strong> do the same for IPv6 addresses. <strong>MX records</strong> tell email servers where to deliver mail for a domain. <strong>CNAME records</strong> create aliases that point one domain name to another.
-      </p>
-    </div>
-
-    <div class="key-facts">
-      <h2>Key Facts About DNS</h2>
-      <ul>
-        <li>DNS stands for Domain Name System — it converts domain names to IP addresses.</li>
-        <li>It was developed in the 1980s to replace a simple HOSTS.TXT file system.</li>
-        <li>DNS operates as a hierarchical, distributed database across many servers worldwide.</li>
-        <li>Most DNS lookups complete in milliseconds, making them nearly invisible to users.</li>
-        <li>Popular public DNS servers include Google (8.8.8.8) and Cloudflare (1.1.1.1).</li>
-        <li>DNSSEC is a security extension that protects DNS from spoofing attacks.</li>
-      </ul>
-    </div>
-
-  </div>
-
-  <footer>
-    <p>Internet Terminology Reference &mdash; Topic 1 &mdash; All Rights Reserved</p>
-  </footer>
-
+<nav>
+    <a href="index.html">Home</a> <a href="www.html">WWW</a> <a href="tcp-ip.html">TCP/IP</a> <a href="browser.html">Web Browsers</a> <a href="web-server.html">Web Servers</a> <a href="url.html">URL</a> <a href="dns.html">DNS</a> <a href="http.html">HTTP</a> <a href="intranet.html">Intranet</a> <a href="extranet.html">Extranet</a> <a href="multitier.html">Multitier</a> <a href="ftp.html">FTP</a> <a href="html.html">HTML</a> <a href="web1.html">Web 1.0</a> <a href="web2.html">Web 2.0</a> <a href="web3.html">Web 3.0</a> <a href="web4.html">Web 4.0</a>
+</nav>
+<h1>DNS - Domain Name System</h1>
+<hr>
+<img src="images/dns.jpg" alt="DNS diagram">
+<h2>What is DNS?</h2>
+<p>DNS (Domain Name System) is like a phone book for the internet. Every website has an IP address (a number like 142.250.74.46), but instead of remembering numbers, DNS lets you type a name like <strong>www.google.com</strong> and automatically translates it into the correct IP address so your browser can find the right server.</p>
+<h2>Structure</h2>
+<ul>
+    <li><strong>Domain name</strong> — the human-friendly name e.g. www.google.com</li>
+    <li><strong>IP address</strong> — the numerical address computers actually use</li>
+    <li><strong>DNS server</strong> — the system that translates one into the other</li>
+</ul>
 </body>
 </html>
