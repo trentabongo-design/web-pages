@@ -1,99 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web Servers – Internet Terminology</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Web Servers</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <h1>Internet Terminology</h1>
-    <p class="subtitle">A Complete Guide to Core Internet &amp; Web Concepts</p>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="www.html">WWW</a></li>
-      <li><a href="tcp-ip.html">TCP/IP</a></li>
-      <li><a href="browser.html">Web Browsers</a></li>
-      <li><a href="web-server.html" class="active">Web Servers</a></li>
-      <li><a href="url.html">URLs</a></li>
-      <li><a href="dns.html">DNS</a></li>
-      <li><a href="http.html">HTTP</a></li>
-      <li><a href="intranet.html">Intranet</a></li>
-      <li><a href="extranet.html">Extranet</a></li>
-      <li><a href="multitier.html">Multitier</a></li>
-      <li><a href="ftp.html">FTP</a></li>
-      <li><a href="html.html">HTML</a></li>
-      <li><a href="web1.html">Web 1.0</a></li>
-      <li><a href="web2.html">Web 2.0</a></li>
-      <li><a href="web3.html">Web 3.0</a></li>
-      <li><a href="web4.html">Web 4.0</a></li>
-    </ul>
-  </nav>
-
-  <div class="container">
-
-    <h1 class="page-title">Web Servers</h1>
-    <span class="term-label">Infrastructure — Term 4</span>
-
-    <div class="content-section">
-      <h2>What Is a Web Server?</h2>
-      <p>
-        A web server is a computer system — along with the software running on it — that stores, processes, and delivers web pages to users over the internet. When you visit a website, you are essentially asking that website's web server to send you its files. The server handles your request and sends back the relevant content.
-      </p>
-      <p>
-        The term "web server" can refer to either the physical hardware (the machine) or the software running on it (such as Apache or Nginx). In most discussions, both aspects work together as a unit.
-      </p>
-    </div>
-
-    <div class="image-block">
-      <figure>
-        <img src="images/web-server.jpg" alt="Diagram showing the client-server relationship where a browser sends a request to a web server and receives a response" />
-        <figcaption>A web server listens for requests from browsers and responds by delivering the requested web page files.</figcaption>
-      </figure>
-    </div>
-
-    <div class="content-section">
-      <h2>How a Web Server Works</h2>
-      <p>
-        Web servers continuously listen on port 80 (HTTP) or port 443 (HTTPS) for incoming requests. When a browser connects and asks for a specific page, the server locates the file, determines the appropriate response, and sends it back — typically within milliseconds.
-      </p>
-      <p>
-        For simple, static websites, the server just reads the HTML file from storage and sends it. For dynamic websites (like social media platforms or online shops), the server runs additional code on the back end to generate customised content for each user before sending a response.
-      </p>
-    </div>
-
-    <div class="content-section">
-      <h2>Popular Web Server Software</h2>
-      <p>
-        Apache HTTP Server is one of the oldest and most widely used web server programs in the world. Nginx (pronounced "engine-x") is known for its high performance and is popular for serving large amounts of traffic efficiently. Microsoft IIS (Internet Information Services) is commonly used on Windows-based servers.
-      </p>
-      <p>
-        Cloud platforms like Amazon Web Services (AWS), Google Cloud, and Microsoft Azure now allow developers to run virtual web servers without managing physical hardware at all.
-      </p>
-    </div>
-
-    <div class="key-facts">
-      <h2>Key Facts About Web Servers</h2>
-      <ul>
-        <li>A web server stores and delivers website files to browsers on request.</li>
-        <li>Web servers use port 80 for HTTP and port 443 for HTTPS connections.</li>
-        <li>Apache and Nginx are the most commonly used web server software packages.</li>
-        <li>A single web server can host thousands of different websites simultaneously.</li>
-        <li>Web servers handle millions of requests per second at large organisations.</li>
-        <li>Load balancers are often used to distribute traffic across multiple servers.</li>
-      </ul>
-    </div>
-
-  </div>
-
-  <footer>
-    <p>Internet Terminology Reference &mdash; Topic 1 &mdash; All Rights Reserved</p>
-  </footer>
-
+<nav>
+    <a href="index.html">Home</a> <a href="www.html">WWW</a> <a href="tcp-ip.html">TCP/IP</a> <a href="browser.html">Web Browsers</a> <a href="web-server.html">Web Servers</a> <a href="url.html">URL</a> <a href="dns.html">DNS</a> <a href="http.html">HTTP</a> <a href="intranet.html">Intranet</a> <a href="extranet.html">Extranet</a> <a href="multitier.html">Multitier</a> <a href="ftp.html">FTP</a> <a href="html.html">HTML</a> <a href="web1.html">Web 1.0</a> <a href="web2.html">Web 2.0</a> <a href="web3.html">Web 3.0</a> <a href="web4.html">Web 4.0</a>
+</nav>
+<h1>Web Servers</h1>
+<hr>
+<img src="images/web-server.jpg" alt="Web server diagram">
+<h2>What is a Web Server?</h2>
+<p>A web server is a computer that stores website files and sends them to users when requested. When you type a website address in your browser, the browser connects to that website's web server, which then sends back the page for your browser to display.</p>
+<h2>Examples of Web Server Software</h2>
+<ul>
+    <li>Apache</li>
+    <li>Nginx</li>
+    <li>Microsoft IIS</li>
+</ul>
 </body>
 </html>
