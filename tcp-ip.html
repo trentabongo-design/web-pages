@@ -1,100 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TCP/IP – Internet Terminology</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>TCP/IP</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <h1>Internet Terminology</h1>
-    <p class="subtitle">A Complete Guide to Core Internet &amp; Web Concepts</p>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="www.html">WWW</a></li>
-      <li><a href="tcp-ip.html" class="active">TCP/IP</a></li>
-      <li><a href="browser.html">Web Browsers</a></li>
-      <li><a href="web-server.html">Web Servers</a></li>
-      <li><a href="url.html">URLs</a></li>
-      <li><a href="dns.html">DNS</a></li>
-      <li><a href="http.html">HTTP</a></li>
-      <li><a href="intranet.html">Intranet</a></li>
-      <li><a href="extranet.html">Extranet</a></li>
-      <li><a href="multitier.html">Multitier</a></li>
-      <li><a href="ftp.html">FTP</a></li>
-      <li><a href="html.html">HTML</a></li>
-      <li><a href="web1.html">Web 1.0</a></li>
-      <li><a href="web2.html">Web 2.0</a></li>
-      <li><a href="web3.html">Web 3.0</a></li>
-      <li><a href="web4.html">Web 4.0</a></li>
-    </ul>
-  </nav>
-
-  <div class="container">
-
-    <h1 class="page-title">Transmission Control Protocol / Internet Protocol (TCP/IP)</h1>
-    <span class="term-label">Protocols — Term 2</span>
-
-    <div class="content-section">
-      <h2>What Is TCP/IP?</h2>
-      <p>
-        TCP/IP stands for Transmission Control Protocol / Internet Protocol. It is the set of communication rules that governs how data is sent and received across the internet. Essentially, it is the foundation that makes it possible for different computers and networks around the world to talk to each other, regardless of what hardware or operating system they use.
-      </p>
-      <p>
-        The name refers to two separate but closely related protocols that work together. TCP handles how data is broken up, sent, and reassembled, while IP handles the addressing — making sure the data reaches the right destination.
-      </p>
-    </div>
-
-    <div class="image-block">
-      <figure>
-        <img src="images/tcp-ip.jpg" alt="Diagram of the TCP/IP four-layer model showing Application, Transport, Internet and Network Access layers" />
-        <figcaption>The TCP/IP model organises communication into four layers, each with a specific role in delivering data.</figcaption>
-      </figure>
-    </div>
-
-    <div class="content-section">
-      <h2>How TCP Works</h2>
-      <p>
-        When you send data over the internet — say, loading a webpage — TCP breaks that data into smaller pieces called packets. Each packet is sent independently across the network and may even take a different route to the destination. When all the packets arrive, TCP reassembles them in the correct order.
-      </p>
-      <p>
-        TCP also includes error-checking. If a packet gets lost or corrupted along the way, TCP detects this and requests that the packet be resent. This makes TCP reliable — you can be confident that the data you receive is complete and correct.
-      </p>
-    </div>
-
-    <div class="content-section">
-      <h2>How IP Works</h2>
-      <p>
-        While TCP deals with the reliability of delivery, IP deals with addressing and routing. Every device connected to the internet is assigned an IP address — a unique numerical label (e.g. 192.168.1.1) that identifies it on the network.
-      </p>
-      <p>
-        When data packets travel across the internet, IP makes sure each one is labelled with the correct source and destination address, so network routers know exactly where to send it. This is similar to writing a postal address on an envelope before sending it in the mail.
-      </p>
-    </div>
-
-    <div class="key-facts">
-      <h2>Key Facts About TCP/IP</h2>
-      <ul>
-        <li>TCP/IP is the core communication protocol suite of the internet.</li>
-        <li>TCP stands for Transmission Control Protocol — it handles reliability and ordering of data.</li>
-        <li>IP stands for Internet Protocol — it handles addressing and routing.</li>
-        <li>Data is split into packets before being sent and reassembled at the destination.</li>
-        <li>Every device on the internet has a unique IP address.</li>
-        <li>TCP/IP was developed in the 1970s by Vint Cerf and Bob Kahn.</li>
-        <li>IPv4 uses 32-bit addresses; IPv6 uses 128-bit addresses to allow far more devices.</li>
-      </ul>
-    </div>
-
-  </div>
-
-  <footer>
-    <p>Internet Terminology Reference &mdash; Topic 1 &mdash; All Rights Reserved</p>
-  </footer>
-
+<nav>
+    <a href="index.html">Home</a> <a href="www.html">WWW</a> <a href="tcp-ip.html">TCP/IP</a> <a href="browser.html">Web Browsers</a> <a href="web-server.html">Web Servers</a> <a href="url.html">URL</a> <a href="dns.html">DNS</a> <a href="http.html">HTTP</a> <a href="intranet.html">Intranet</a> <a href="extranet.html">Extranet</a> <a href="multitier.html">Multitier</a> <a href="ftp.html">FTP</a> <a href="html.html">HTML</a> <a href="web1.html">Web 1.0</a> <a href="web2.html">Web 2.0</a> <a href="web3.html">Web 3.0</a> <a href="web4.html">Web 4.0</a>
+</nav>
+<h1>TCP/IP - Transmission Control Protocol / Internet Protocol</h1>
+<hr>
+<img src="images/tcp-ip.jpg" alt="TCP/IP diagram">
+<h2>What is TCP/IP?</h2>
+<p>TCP/IP is the set of communication rules that controls how data is sent and received across the internet. It is made up of two parts: TCP (Transmission Control Protocol), which breaks data into packets and makes sure they all arrive correctly, and IP (Internet Protocol), which handles addressing — making sure each packet is sent to the right destination using IP addresses.</p>
+<h2>Structure</h2>
+<ul>
+    <li><strong>TCP</strong> — breaks data into packets and checks they arrive correctly</li>
+    <li><strong>IP</strong> — gives every device an address and routes packets to the right place</li>
+</ul>
 </body>
 </html>
